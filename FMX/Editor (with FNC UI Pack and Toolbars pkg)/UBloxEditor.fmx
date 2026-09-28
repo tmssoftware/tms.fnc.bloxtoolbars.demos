@@ -1,0 +1,194 @@
+object BloxEditorForm: TBloxEditorForm
+  Left = 0
+  Top = 0
+  Caption = 'TMS FNC BLox Editor'
+  ClientHeight = 600
+  ClientWidth = 940
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 940.000000000000000000
+    Size.Height = 112.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Panel2: TPanel
+      Align = Client
+      Size.Width = 768.000000000000000000
+      Size.Height = 112.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object TMSFNCToolBar1: TTMSFNCToolBar
+        Align = Top
+        Size.Width = 768.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Appearance.FlatStyle = True
+        CompactBitmaps = <>
+        Font.Name = 'Segoe UI'
+        object TMSFNCBloxEditToolBar1: TTMSFNCBloxEditToolBar
+          Position.X = 9.000000000000000000
+          Position.Y = 3.000000000000000000
+          Size.Width = 297.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Appearance.FlatStyle = True
+          CompactBitmaps = <>
+          Font.Name = 'Segoe UI'
+          OptionsMenu.ShowButton = False
+          BloxControl = TMSFNCBloxControl1
+          ZoomInterval = 0.100000000000000000
+        end
+        object TMSFNCBloxSelectToolBar1: TTMSFNCBloxSelectToolBar
+          Tag = 1
+          Position.X = 309.000000000000000000
+          Position.Y = 3.000000000000000000
+          Size.Width = 241.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Appearance.FlatStyle = True
+          CompactBitmaps = <>
+          Font.Name = 'Segoe UI'
+          OptionsMenu.ShowButton = False
+          BloxControl = TMSFNCBloxControl1
+        end
+      end
+      object TMSFNCBloxFormatBlockToolBar1: TTMSFNCBloxFormatBlockToolBar
+        Align = Top
+        Position.Y = 36.000000000000000000
+        Size.Width = 768.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Appearance.FlatStyle = True
+        CompactBitmaps = <>
+        Font.Name = 'Segoe UI'
+        OptionsMenu.ShowButton = False
+        BloxControl = TMSFNCBloxControl1
+      end
+      object TMSFNCBloxFormatBlockTextToolBar1: TTMSFNCBloxFormatBlockTextToolBar
+        Align = Top
+        Position.Y = 66.000000000000000000
+        Size.Width = 768.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Appearance.FlatStyle = True
+        CompactBitmaps = <>
+        Font.Name = 'Segoe UI'
+        OptionsMenu.ShowButton = False
+        BloxControl = TMSFNCBloxControl1
+      end
+    end
+    object TMSFNCBloxNavigator1: TTMSFNCBloxNavigator
+      Align = Right
+      Position.X = 768.000000000000000000
+      Size.Width = 172.000000000000000000
+      Size.Height = 112.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      BloxControl = TMSFNCBloxControl1
+      EnableZoom = False
+      MoveCursor = crHandPoint
+      ZoomCursor = crCross
+    end
+  end
+  object TMSFNCBloxSelector1: TTMSFNCBloxSelector
+    Align = Right
+    Position.X = 640.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 488.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Appearance.ItemHeight = 59.000000000000000000
+    Appearance.Stroke.Color = claDarkgray
+    Appearance.Fill.Color = xFFE9E9E9
+    Appearance.StrokeHover.Color = claLightslategray
+    Appearance.FillHover.Color = xFFBBC4CC
+    Appearance.StrokeDown.Color = claSlategray
+    Appearance.FillDown.Color = xFFB8C0C8
+    Appearance.StrokeSelected.Color = claDarkslategray
+    Appearance.FillSelected.Color = xFFB8C0C8
+    Appearance.StrokeDisabled.Color = claDarkgray
+    Appearance.FillDisabled.Color = claSilver
+    Appearance.SeparatorStroke.Color = claDarkgray
+    Appearance.SeparatorFill.Color = xFFBBC4CC
+    Appearance.Font.Size = 10.000000000000000000
+    Appearance.Font.Name = 'Segoe UI'
+    Appearance.SeparatorFont.Name = 'Segoe UI'
+    BloxControl = TMSFNCBloxControl1
+    Rows = 100
+    Items = <>
+  end
+  object TMSFNCSplitter1: TTMSFNCSplitter
+    Align = Right
+    Position.X = 630.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 10.000000000000000000
+    Size.Height = 488.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    MinSize = 20.000000000000000000
+  end
+  object TMSFNCBloxControl1: TTMSFNCBloxControl
+    Align = Client
+    Size.Width = 630.000000000000000000
+    Size.Height = 488.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    ElementHandleAppearance.Size.StrokeColor = claDodgerblue
+    ElementHandleAppearance.Size.FillColor = claLightblue
+    ElementHandleAppearance.Size.DisabledStrokeColor = claSilver
+    ElementHandleAppearance.Size.DisabledFillColor = claSilver
+    ElementHandleAppearance.Size.Size = 3
+    ElementHandleAppearance.Size.Style = hhRectangle
+    ElementHandleAppearance.Rotate.StrokeColor = claDodgerblue
+    ElementHandleAppearance.Rotate.FillColor = claLightblue
+    ElementHandleAppearance.Rotate.DisabledStrokeColor = claSilver
+    ElementHandleAppearance.Rotate.DisabledFillColor = claSilver
+    ElementHandleAppearance.Rotate.Size = 4
+    ElementHandleAppearance.Rotate.Style = hhEllipse
+    ElementHandleAppearance.Custom.StrokeColor = claDodgerblue
+    ElementHandleAppearance.Custom.FillColor = claCoral
+    ElementHandleAppearance.Custom.DisabledStrokeColor = claSilver
+    ElementHandleAppearance.Custom.DisabledFillColor = claSilver
+    ElementHandleAppearance.Custom.Size = 4
+    ElementHandleAppearance.Custom.Style = hhDiamond
+    ElementHandleAppearance.RotCenter.StrokeColor = claDodgerblue
+    ElementHandleAppearance.RotCenter.FillColor = claLightblue
+    ElementHandleAppearance.RotCenter.DisabledStrokeColor = claSilver
+    ElementHandleAppearance.RotCenter.DisabledFillColor = claSilver
+    ElementHandleAppearance.RotCenter.Size = 3
+    ElementHandleAppearance.RotCenter.Style = hhCrossedEllipse
+    GroupHandleAppearance.Size.StrokeColor = claFirebrick
+    GroupHandleAppearance.Size.FillColor = claLightcoral
+    GroupHandleAppearance.Size.DisabledStrokeColor = claSilver
+    GroupHandleAppearance.Size.DisabledFillColor = claSilver
+    GroupHandleAppearance.Size.Size = 3
+    GroupHandleAppearance.Size.Style = hhRectangle
+    GroupHandleAppearance.Rotate.StrokeColor = claFirebrick
+    GroupHandleAppearance.Rotate.FillColor = claLightcoral
+    GroupHandleAppearance.Rotate.DisabledStrokeColor = claSilver
+    GroupHandleAppearance.Rotate.DisabledFillColor = claSilver
+    GroupHandleAppearance.Rotate.Size = 4
+    GroupHandleAppearance.Rotate.Style = hhEllipse
+    GroupHandleAppearance.Custom.StrokeColor = claFirebrick
+    GroupHandleAppearance.Custom.FillColor = claCoral
+    GroupHandleAppearance.Custom.DisabledStrokeColor = claSilver
+    GroupHandleAppearance.Custom.DisabledFillColor = claSilver
+    GroupHandleAppearance.Custom.Size = 4
+    GroupHandleAppearance.Custom.Style = hhDiamond
+    GroupHandleAppearance.RotCenter.StrokeColor = claFirebrick
+    GroupHandleAppearance.RotCenter.FillColor = claLightcoral
+    GroupHandleAppearance.RotCenter.DisabledStrokeColor = claSilver
+    GroupHandleAppearance.RotCenter.DisabledFillColor = claSilver
+    GroupHandleAppearance.RotCenter.Size = 3
+    GroupHandleAppearance.RotCenter.Style = hhCrossedEllipse
+  end
+end

@@ -1,0 +1,59 @@
+object Form66: TForm66
+  Left = 0
+  Top = 0
+  Caption = 'TMS FNC Blox Sample 1'
+  ClientHeight = 852
+  ClientWidth = 1051
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TMSFNCBloxControl1: TTMSFNCBloxControl
+    Left = 0
+    Top = 65
+    Width = 1051
+    Height = 787
+    Align = alClient
+    ParentDoubleBuffered = False
+    DoubleBuffered = True
+    TabOrder = 0
+    Stroke.Width = 1.000000000000000000
+    SnapGrid.Stroke.Style = ssDot
+    TopRuler.Font.Size = 12.000000000000000000
+    TopRuler.Size = 19
+    LeftRuler.Font.Size = 12.000000000000000000
+    LeftRuler.Size = 19
+    ExplicitWidth = 937
+    ExplicitHeight = 627
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1051
+    Height = 65
+    Align = alTop
+    TabOrder = 1
+    ExplicitWidth = 937
+    object Label1: TLabel
+      AlignWithMargins = True
+      Left = 11
+      Top = 11
+      Width = 1029
+      Height = 43
+      Margins.Left = 10
+      Margins.Top = 10
+      Margins.Right = 10
+      Margins.Bottom = 10
+      Align = alClient
+      ExplicitWidth = 3
+      ExplicitHeight = 13
+    end
+  end
+end

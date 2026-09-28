@@ -1,0 +1,43 @@
+object Form66: TForm66
+  Left = 0
+  Top = 0
+  Caption = 'TMS FNC Blox Sample 1'
+  ClientHeight = 834
+  ClientWidth = 1039
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 1039.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = []
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 1019.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object TMSFNCBloxControl1: TTMSFNCBloxControl
+    Align = Client
+    Size.Width = 1039.000000000000000000
+    Size.Height = 769.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    SnapGrid.Stroke.Style = ssDot
+    TopRuler.Font.Size = 8.000000000000000000
+    TopRuler.Size = 15
+    LeftRuler.Font.Size = 8.000000000000000000
+    LeftRuler.Size = 15
+  end
+end
